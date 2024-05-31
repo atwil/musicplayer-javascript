@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+body {
+  background: #20262E;
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+#app {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.2s;
+  height: 800px;
+}
+ 
+.demo-description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+ 
+.demo-description h2 {
+  font-weight: semibold;
+  margin-bottom: 5px;
+}
+ 
+.demo-description span {
+  color: #999999;
+}
+ 
+.test-area {
+  display: flex;
+}
+ 
+.input-area {
+  text-align: right;
+}
+ 
+.input-area label {
+  display: inline-block;
+  line-height: 48px;
+  margin-right: 8px;
+  text-align: right;
+  width: 150px;
+}
+ 
+.input-area input[type="text"] {
+  border: 1px solid #999999;
+  border-radius: 3px;
+  height: 30px;
+  width: 150px;
+  padding: 0 7px;
+}
+
+.input-area select {
+  border: 1px solid #999999;
+  border-radius: 3px;
+  height: 30px;
+  width: 166px;
+  padding: 0 7px;
+}
+
+ 
+.input-area input::placeholder {
+  color: #d0d0d0;
+}
+ 
+.input-area button {
+  background-color: #57abf0;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 15px;
+  width: 166px;
+  padding: 15px 10px;
+}
+
+.input-area button:hover{
+  background-color: #4281b5;
+}
+
+ 
+.output-area {
+  color: #505050;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 0px;
+  padding-top: 5px;
+  width: calc(100% - 360px);
+  border: 2px solid #57abf0;
+  border-radius: 5px;
+}
+
+.output-area div{
+  margin: 5px;
+  max-height: 370px;
+  overflow: auto;
+}
+ 
+@media screen and (max-width: 616px) {
+  .input-area {
+    text-align: center;
+  }
+
+  .input-area label {
+    text-align: left;
+  }
+   
+  .input-area button {
+    width: 140px;
+    padding: 10px 7px;
+  }
+  
+  .output-area {
+    width: calc(100% - 150px);
+  }
+}
